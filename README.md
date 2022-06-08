@@ -21,6 +21,6 @@ Import 3 txt file in webpage:
 ![](./images/page.png)
 
 
-![](./images/VideoMode.jpeg)
+![](./images/local.png)
 
 ![](./images/FrameMode.jpeg)
