@@ -1,0 +1,3 @@
+﻿URLID,URL,TagID,Tag,Start,End,Time,State
+001,./data/video/001.mp4,1,伸手（左右手、外伸）,3.28,4.59,1,1
+001,./data/video/001.mp4,4,随机、无意义、细微动作（是动作但无实际关联上下文语境）,7.87,9.82,1,1

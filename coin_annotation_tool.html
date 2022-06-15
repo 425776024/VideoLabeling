@@ -17,7 +17,7 @@
     <div id="tip"></div>
     <div class="header">
       <div class="title">
-<!--        <img src="./lib/img/logo.png">-->
+        <a href="./about.html" style="font-size: 20px; color: #ff0000" target="_blank">How to use</a>
       </div>
       <form class="form-inline">
 <!--  导入3种url txt-->
@@ -33,8 +33,13 @@
           </div>
           <span>&nbsp;-&nbsp;</span>
           <div class="form-group">
-            <input type='text' name='File' id='frameFile' disabled class='form-control' placeholder="Load frame.txt" />
-            <input type="file" name="frames" class="file form-control" id="tags" size="28" onchange="changeFile(this, 'frameFile')" />
+            <input type='text' name='File' id='frameFile' disabled class='form-control' placeholder="Load frame.txt (Optional)" />
+            <input type="file" name="frames" class="file form-control" id="frames" size="28" onchange="changeFile(this, 'frameFile')" />
+          </div>
+          <span>&nbsp;-&nbsp;</span>
+          <div class="form-group">
+            <input type='text' name='File' id='historyFile' disabled class='form-control' placeholder="Load history.txt (Optional)" />
+            <input type="file" name="historys" class="file form-control" id="historys" size="28" onchange="changeFile(this, 'historyFile')" />
           </div>
 <!--          把上传的txt数据解析，存localStorage、-->
           <button type="button" onclick="handleImport()" class="btn btn-primary">Load</button>
@@ -67,6 +72,7 @@
       <li id="export">
         <div>
           <a role="button" class="btn btn-primary" onclick="handleExport(this)" download="download.csv" href="#">Download</a>
+          <a role="button" class="btn btn-danger" onclick="handleClear(this)"  href="#">清空</a>
         </div>
       </li>
     </ul>
